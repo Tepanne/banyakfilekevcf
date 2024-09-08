@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert TXT to VCF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Convert Multiple TXT Files to VCF</h1>
+
+  <label for="globalContactNameInput">Nama Kontak Global:</label>
+  <input type="text" id="globalContactNameInput" placeholder="Masukkan nama kontak" />
+  <br /><br />
+
+  <label for="startCategoryInput">Mulai dari Kategori:</label>
+  <input type="text" id="startCategoryInput" placeholder="Masukkan kategori (contoh: admin, navy, anggota)" />
+  <br /><br />
+
+  <label for="file-input">Pilih file TXT:</label>
+  <input type="file" id="file-input" class="file-input" accept=".txt" multiple />
+  <br /><br />
+
+  <button id="processFilesBtn">Proses File</button>
+
+  <div id="file-areas"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
